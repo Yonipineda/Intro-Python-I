@@ -15,7 +15,23 @@ y = "7"
 
 # YOUR CODE HERE
 
+def combine_12(x, y):
+    if type(y) is not int: # check to see if y is an int dtypee
+        y = int(y) # if not, y -> int
+
+        return x+y # return combo
+
+print(f'x/y integer: {combine_12(x, y)}') 
+
 
 # Write a print statement that combines x + y into the string value 57
 
 # YOUR CODE HERE
+
+def combine_57(x, y):
+    if type(x) is not str: ## checking to see if x is string, if not
+        x = str(x)         ## convert to string
+
+        return x+y         ## return combination 
+
+print(f'x/y string: {combine_57(x, y)}') 
