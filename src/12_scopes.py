@@ -20,7 +20,7 @@ def outer():
     y = 120
 
     def inner():
-        nonlocal y 
+        nonlocal y # declares the var is not local
         y = 999
 
     inner()
