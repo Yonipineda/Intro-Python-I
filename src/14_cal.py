@@ -30,3 +30,19 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+from argparse import ArgumentParser
+
+def mk_parser() -> ArgumentParser:
+  parser = ArgumentParser(description='Calender')
+  parser.add_argument('--month', type=int, default=6,
+                      help='Tis a month')
+
+  parser.add_argument('--year', type=int, default=2020,
+                      help='Tis a year')
+
+  return parser
+
+cal = mk_parser().parse_args()
+
+calendar.TextCalendar().prmonth(theyear=cal.year, themonth=cal.month)
+

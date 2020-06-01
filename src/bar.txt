@@ -1,0 +1,3 @@
+An arbitrary file, named bar. Bar is the inverse of foo.
+Bar has only non-foo qualities and likes.
+Bar is that anti-thesis to foo, and foo to him.
